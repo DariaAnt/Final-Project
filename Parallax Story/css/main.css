@@ -1,0 +1,232 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+
+.site-image {
+	margin: 0;
+	padding: 0;
+	
+	background: rgb(247, 245, 244) url('http://lorempixel.com/400/200') center center no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	
+
+}
+
+a {
+	text-decoration: none;
+}
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+.logo a, li a {
+	font-family: 'Lobster', serif, cursive;
+	color: #555;
+	font-size:1.3em;	
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.site-container {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 1300px;
+}
+
+/**** Header Styling  ****/
+
+.site-header {
+	background: transparent;
+	width: 100%;
+	margin:0 auto;
+	position: fixed;
+	top: 0;
+	/*text-align: center;
+	left: 50%;
+	margin-left: -37.5%;*/
+}
+
+.site-header-scroll {
+	background-color: white;
+}
+
+.logo {
+	float: left;
+	margin-left: 25%;
+	margin-top: 1vh;
+}
+
+.site-nav {
+	float: right;
+	min-height: 70px;
+	margin:0;
+	margin-right: 3%;
+}
+
+.site-nav li{
+	display: inline-block;
+	margin: 10px;
+
+}
+/*.site-nav li a{
+	transition: all 3s ease-in-out;
+}*/
+.site-nav li a:hover {
+	text-decoration: underline;
+}
+
+/** Sub Menu **/
+.site-nav li ul {
+	position: absolute;
+	display: none;
+	background-color: red;
+}
+.site-nav li:hover ul {
+	display: block;
+}
+
+/**** End of Header Styling ****/
+
+/**** Content Styling ****/
+.site-content {
+	/*padding-top:100vh;*/
+	min-height: 1200px;
+	width: 100%;
+	margin:0;
+}
+
+.main-image {
+	min-height: 500px;
+	width: 100%;
+	background-color: rgb(247, 245, 244);
+	padding-left: 100px;
+}
+
+
+
+/*** Shop Home Page Styling ***/
+.shop-home-page {
+	background:#fff;
+	min-height: 600px;
+	width: 100%;
+}
+
+.shop-container {
+	width: 960px;
+	margin: auto;
+	background-color: grey;
+}
+
+.shop-submenu{
+	display: table-cell;
+	width: 24%;
+	float: left;
+	margin:40px;
+	margin-top: 100px;
+	background-color: white;
+}
+
+.shop-submenu img {
+	display:block;
+}
+.shop-submenu h3 {
+	background-color: transparent;
+	text-align: center;
+	padding: 0 5px;
+}
+/*** Tilda Home Page Styling ***/
+.tilda-home-page {
+	min-height: 510px;
+	width: 100%;
+	background-color: red;
+	position: relative;
+}
+
+.tilda-home-page p {
+	float: left;
+	width: 60%;
+	background-color: white;
+	padding: 50px;
+	margin: 0;
+	/*margin-right: 500px;*/
+}
+
+.tilda-image img {
+	/*display: inline-block;*/
+	/*float: right;
+	/*padding-left: 20px;*/
+
+}
+
+.tilda-image {
+	/*display: inline-block;*/
+	/*position: absolute;*/
+	float: left;
+	width: 40%;
+	max-width: 100%;
+	/*right: 0;*/
+
+}
+
+/*** Tilda Home Page Styling ***/
+
+/**** End of Content Styling ****/
+
+/**** Footer Styling ****/
+.site-footer {
+	background-color: black;
+	min-height: 100px;
+	width: 100%;
+	margin:0;
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+

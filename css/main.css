@@ -1,0 +1,333 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: rgb(247, 245, 244) url('../images/main-background.jpg') center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+
+}
+
+ul, li, a {
+	margin:0;
+  	padding:0;
+	text-decoration: none;
+  	list-style-type: none;
+ }
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+a, span {
+	font-family: 'Lobster', serif, cursive;
+	color: #555;
+	line-height: 3rem;
+}
+li a, .shop-submenu a{
+	font-size:1.3em;
+}
+.logo a{
+	font-size:1.7em;
+	font-weight: lighter;
+}
+.site-content span{
+	font-size: 2.0em;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2.0em;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.site-container {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 1300px;
+}
+
+/**** Header Styling  ****/
+
+.site-header {
+	background: transparent;
+	width: 100%;
+	margin:0 auto;
+	position: fixed;
+	z-index: 10;
+	transition: all 0.5s linear;
+	
+	/*text-align: center;
+	left: 50%;
+	margin-left: -37.5%;*/
+}
+
+.site-header-scroll {
+	background-color: rgb(247, 245, 244);
+
+}
+
+nav{
+  width:90%;
+  position: relative;
+  margin:0 auto;
+}
+
+.logo {
+	float: left;
+	margin-top: 27px;
+	margin-left: 15%;
+}
+
+.site-nav {
+	float: right;
+	height:100%;
+}
+
+.site-nav ul li{
+	float:left;
+  	height:100%;
+
+}
+.site-nav ul li a{
+  display: inline-block;
+  padding: 0 10px;
+  padding-top: 4vh;
+  line-height: 3rem;
+  border-bottom: 3px solid black;
+  border-bottom-color: transparent;
+  transition: all 0.1s linear;
+ }
+
+.site-nav ul li a:hover {
+	text-decoration: underline;
+	transform: scale(1.05);
+}
+
+/** Sub Menu **/
+.dropdown {
+	width: 100%;
+	position: absolute;
+	left:0;
+	background-color: rgb(247, 245, 244);
+	z-index: 100;
+	display: none;
+	transition: .4s opacity ease;
+
+}
+
+.site-nav ul li:hover .dropdown{
+  display: block;
+  z-indez: 102;
+}
+.dropdown-link {
+	float: left;
+  	width: 25%;
+  	text-align: center;
+				
+}
+
+.dropdown-link img{
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+}
+.dropdown-link span{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+
+/**** End of Header Styling ****/
+
+/**** Content Styling ****/
+.site-content {
+	padding-top:100vh;
+	min-height: 1200px;
+	width: 100%;
+	margin:0;
+
+}
+
+.main-image {
+	min-height: 500px;
+	width: 100%;
+	background-color: rgb(247, 245, 244);
+	padding-left: 100px;
+}
+
+
+
+/*** Shop Home Page Styling ***/
+.shop-home-page {
+	background:#fff;
+	min-height: 600px;
+	width: 100%;
+	background-color: #EAE4E8;
+}
+
+.shop-home-page span{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+.shop-container {
+	width: 960px;
+	margin: auto;
+	background-color: transparent;
+	display: table;
+	padding-bottom: 60px;
+}
+
+.shop-submenu-row {
+	display: table-row;
+}
+
+.shop-submenu:hover{
+	transform: scale(1.05);
+}
+.shop-submenu{
+	display: table-cell;
+	width: 31%;
+	float: left;
+	margin:7% 7% 7% 10%;
+	background-color: white;
+	border-radius: 3px;
+	transition: transform 0.1s linear;
+
+}
+
+.shop-submenu img {
+	display:block;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.shop-submenu h4 {
+	background-color: transparent;
+	text-align: center;
+	padding: 0 5px;
+	font-weight: normal;
+}
+/**************/
+.hearts-background{
+	background: url('../images/hearts-background1.gif');
+	height: 100px;
+}
+
+/*** Tilda Home Page Styling ***/
+.tilda-home-page {
+	width: 100%;
+	background-color: #EAE4E8;
+	position: relative;
+	padding-top: 100px;
+}
+
+
+.tilda-home-page span, .tilda-home-page p{
+	float: left;
+	width: 60%;
+	margin: 0 500px 0 0;
+}
+
+.tilda-home-page span {
+	text-align: center;
+}
+	
+.tilda-home-page p{
+	text-align: justify;
+	padding: 50px 100px 200px 100px;
+}
+
+.tilda-image img {
+	border-radius: 3px;
+}
+
+.tilda-image {
+	/*display: inline-block;*/
+	position: absolute;
+	width: 500px;
+	right: 0;
+	background-color: #EAE4E8;
+	/*top: 0;
+	/*z-index: 1;*/
+	/*right: 0;*/
+
+}
+
+/*** Tilda Home Page Styling ***/
+
+/**** End of Content Styling ****/
+
+/**** Footer Styling ****/
+.site-footer {
+	background-color: #EAE4E8;
+	width: 100%;
+	margin:0 auto;
+	
+
+}
+.site-footer p{
+	padding-left: 100px;
+	padding-bottom: 30px;
+	display: inline-block;
+	width: 50%;
+}
+
+.social-media{
+	display: inline-block;
+	float: right;
+}
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+

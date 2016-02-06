@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="site description goes here">
+    	<meta name="keywords" content="site, keywords, go, here">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<title>CHANGE_THE_TITLE</title>
+		<link href='https://fonts.googleapis.com/css?family=Lobster|Playball|Oleo+Script' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="site-container">
+			<header id="header" class="site-header">
+				<div class="logo">
+				<a href="#">
+				Handmade by mum
+				</a>
+			</div>
+			<nav class="site-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#"> Shop</a>
+						<ul>
+							<li><a href="#">Dolls</a></li>
+							<li><a href="#">Snails</a></li>
+							<li><a href="#">Bunnies</a></li>
+							<li><a href="#">Horses</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Tilda Story</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Cart</a></li>
+				</ul>
+			</nav>
+			</header>
+
+			<main class="site-content">
+
+
+				<div class="shop-home-page">
+					<div class="shop-container clearfix">
+						<div class="shop-submenu">
+							<a href="#"><img src="images/shop_doll.jpg" alt="Shop for Dolls" height="260" width="230"></a>
+							<h3><a href="#">Tilda Dolls</a></h3>
+						</div>
+
+						<div class="shop-submenu">
+							<a href="#"><img src="images/shop_snails2.jpg" alt="Shop for Dolls" height="260" width="230"></a>
+							<h3><a href="#">Tilda Snails</a></h3>
+						</div>
+
+						<div class="shop-submenu">
+							<a href="#"><img src="images/shop_bunny.jpg" alt="Shop for Dolls" height="260" width="231"></a>
+							<h3><a href="#">Tilda Bunnies</a></h3>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="tilda-home-page">
+					<p> Tilda is a craft brand founded by Norwegian designer Tone Finnanger in 1999. There is a certain attitude to life in Tilda’s world, whimsical and romantic, like a ball gown worn with wellies – perfectly imperfect.The Tilda range consists of craft products such as fabric, paper and accessories, as well as home products and craft books.</p>
+					
+					<div class="tilda-image">
+						<img src="images/tilda_world_home_page.png" alt="Image of Tilda Doll" height="450" width="500">
+					</div>
+				</div>
+				<div id="parallax" class="site-image"></div>
+
+			</main>
+
+			<footer class="site-footer">
+				&copy; CHANGE_THE_YEAR
+			</footer>
+
+		</div><!-- .site-container -->
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js">
+		</script>
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    	<script>
+			var controller = new ScrollMagic.Controller();
+			new ScrollMagic.Scene({
+				offset: 100
+			})
+			.setClassToggle("#header", "site-header-scroll")
+			.addTo(controller);
+
+			
+
+	
+		</script>
+		
+	</body>
+</html>
